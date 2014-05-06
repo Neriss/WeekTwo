@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inline Studios</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div class="logo">
+		<h1>Inline Studios</h1>
+	</div>	
+	<ul class="nav">
+		<li><a class="active" href="inlinestudios.html">Home</a></li>
+		<li><a href="aboutinline.html">About</a>
+			<ul>
+				<li><a href="aboutinline.html#class">Classes</a></li>
+				<li><a href="aboutinline.html#prices">Rates</a></li>
+				<li><a href="aboutinline.html#policies">Policies</a></li>
+			</ul>
+		</li>
+		<li><a href="schedulebooking.html">Get Inline</a></li>
+		<li><a href="inlinevlog.html">Vlog</a></li>
+	</ul><!--cls.nav-->
+
+	<div class="yay clearfix">
+		<h2>It's</h2>
+		<div id="clockbox">
+			<script type="text/javascript">
+			tday  =new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+			tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+			function GetClock(){
+			d = new Date();
+			nday   = d.getDay();
+			nmonth = d.getMonth();
+			ndate  = d.getDate();
+			nyear = d.getYear();
+			nhour  = d.getHours();
+			nmin   = d.getMinutes();
+			if(nyear<1000) nyear=nyear+1900;
+
+			     if(nhour ==  0) {ap = " AM";nhour = 12;} 
+			else if(nhour <= 11) {ap = " AM";} 
+			else if(nhour == 12) {ap = " PM";} 
+			else if(nhour >= 13) {ap = " PM";nhour -= 12;}
+
+			if(nmin <= 9) {nmin = "0" +nmin;}
+
+
+			document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
+			setTimeout("GetClock()", 1000);
+			}
+			window.onload=GetClock;
+			</script>
+		</div>
+
+		<div class="contentWrap clearfix">
+			<div class="circle"><h3>Inline Today</h3></div>
+			<div class="classes">
+				<h4 class="class">Rest-ahh-re @ 0800</h4>
+				<p class="describe">Healing Hatha yoga, practiced with cushioning props to provide a supportive environment for total relaxation.</p>
+
+				<h4 class="class">Iron Lattes @ 1400</h4>
+				<p class="describe">Traditional mat pilates techniques with a touch of weights and cardio.</p>
+			</div><!-- cls.classes -->
+		</div>
+	</div>
+
+	<div class="contact">
+		<h4>Contact</h4>
+		<div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2878.6518700926513!2d-79.54152299999998!3d43.82157999999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2f6bbd733991%3A0x1ff3986710e7b2b8!2sStratusphere+Yoga!5e0!3m2!1sen!2sca!4v1398296354758" width="400" height="400" frameborder="0"></iframe></div>
+		<div class="address">
+			<p class="email"><a href="mailto:hi@nerissamartin.com">hi@nerissamartin.com</a></p>
+			<p>Inline is at:</p>
+			<address>123 Fake Street, Suite A123<br>Toronto, ON M6R 4X4</address>
+			<p>(416) 223-3334</p>
+			<p>Just walk down the stairs of the Broadview Medical Building and look for the Inline sign.</p>		
+		</div>
+	</div>
+</body>
+
+</html>

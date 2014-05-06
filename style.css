@@ -1,0 +1,309 @@
+/*--GLOBAL STYLES--*/
+
+* {
+	box-sizing: border-box;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+@font-face {
+    font-family: 'gladifiltheftegladifilthefte';
+    src: url('fonts/Gladifilthefte-webfont.eot');
+    src: url('fonts/Gladifilthefte-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Gladifilthefte-webfont.woff') format('woff'),
+         url('fonts/Gladifilthefte-webfont.ttf') format('truetype'),
+         url('fonts/Gladifilthefte-webfont.svg#gladifiltheftegladifilthefte') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: 'SourceSansPro-Semibold';
+	src: url('fonts/SourceSansPro-Semibold.otf');
+}
+
+@font-face {
+	font-family: 'SourceSansPro-ExtraLight';
+	src: url('fonts/SourceSansPro-ExtraLight.otf');
+}
+
+@font-face {
+	font-family: 'SourceSansPro-Regular';
+	src: url('fonts/SourceSansPro-Regular.otf');
+}
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+body {
+	background-image: url(images/Yoga3.jpg) ;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	background-position: bottom left;
+	background-attachment: fixed;
+}
+
+.logo {
+	width: 100px;
+	height: 45px;
+	border-top: 136px solid transparent;
+	border-left: 220px solid #E86052;
+	border-bottom: 136px solid transparent;
+	position: relative;
+}
+
+h1 {
+	font-family: 'gladifiltheftegladifilthefte';
+	font-size: 38px;
+	position: absolute;
+	top: -45px;
+	left: -195px;
+	color: #fff;
+	text-shadow: 0 0 45px #C2FF00;
+}
+
+h2, h3, h4, h5, h6, dt, #clockbox {
+	font-family: 'SourceSansPro-Semibold';
+	color: #888;
+}
+
+p, time, address, dd, .contentRates {
+	font-family: 'SourceSansPro-Regular';
+	color: #888;
+}
+
+a:hover {
+	color: #FF00DB;	
+}
+
+.active {
+	color: #FF00DB;
+}
+
+
+/*--NAV MENU--*/
+
+
+ul.nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: absolute;
+	top: 70px;
+	width: 65%;
+	left: 400px;
+}
+
+ul.nav li {
+	display: inline;
+	position: relative;
+}
+
+ul.nav li ul {
+	display: none;
+	position: absolute;
+	left: 100px;
+}
+
+ul.nav li:hover ul {
+	display: block;
+}
+
+ul.nav li ul li {
+	display: list-item;
+	list-style: none;
+}
+
+ul a {
+	font-family: 'SourceSansPro-ExtraLight';
+	font-size: 30px;
+	text-decoration: none;
+	color: #000;
+	margin-left: 15%;
+}
+
+
+
+
+
+/*--HOME PAGE--*/
+
+h2 {
+	font-size: 60px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+h4 {
+	font-size: 25px;
+}
+
+#clockbox {
+	font-size: 60px;
+}
+
+.yay {
+	padding: 15px;
+	position: absolute;
+	top: 255px;
+	background: #fff;
+	width: 100%;
+}
+
+.circle {
+	border-radius: 50%;
+	padding: 40px;
+	background-color: #003CFF;
+	width: 20%;
+	margin: 35px 40px 20px 20px;
+	float: right;
+	box-shadow: 5px 7px 10px #888;
+}
+
+time, p {
+	font-size: 20px;
+}
+
+h3 {
+	font-size: 40px;
+	text-align: center;
+	color: white;
+}
+
+
+
+
+/*--HEADER--*/
+
+
+
+
+
+
+
+
+
+/*--MAIN CONTENT--*/
+
+.mainContent {
+	background-color: white;
+	padding: 15px;
+	width: 75%;
+	float: left;
+}
+
+.mainContent h4 {
+	margin: 0;
+}
+
+.mainContent p {
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+/*--ASIDE--*/
+
+aside {
+	background-color: #0CC9E8;
+	opacity: 0.9;
+	width: 25%;
+	float: right;
+}
+
+aside p {
+	color: black;
+	font-size: 15px;
+}
+
+
+
+
+
+
+
+/*--CALENDAR--*/
+
+
+
+
+
+
+
+
+
+/*--FORM--*/
+
+
+
+
+
+
+
+
+
+/*--VLOG--*/
+
+
+
+
+
+
+
+
+
+/*--FOOTER--*/
+
+.contact {
+	background-color: black;
+	width: 100%;
+	padding: 0 15px;
+	position: relative;
+	top: 386px;
+	padding-bottom: 20px;
+	clear: both;
+}
+
+.contact h4, .contact p, .contact address {
+	color: white;
+}
+
+.contact h4 {
+	font-family: 'SourceSansPro-ExtraLight';
+	font-size: 30px;
+	margin-top: 0;
+}
+
+.contact p, .contact address {
+	font-size: 15px;
+}
+
+.address {
+	position: absolute;
+	top: 58px;
+	left: 450px;
+}
+
+.email a {
+	font-family: 'SourceSansPro-ExtraLight';
+	font-size: 45px;
+	text-decoration: none;
+	color: white;
+}
+
+.email a:hover {
+	color: #FF00DB;	
+}
